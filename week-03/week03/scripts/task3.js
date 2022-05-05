@@ -23,9 +23,9 @@ document.getElementById("sum").value = sum;
 // Step 5: Add a "click" event listener to the HTML button with an ID of addNumbers that calls the addNumbers function
 document.getElementById("addNumbers").addEventListener("click", addNumbers);
 // Step 6: Using function expressions, repeat Steps 1-5 with new functions named subtract and subtractNumbers and HTML form controls with IDs of minuend, subtrahend, difference and subtractNumbers
-const subtract = function(number1, number2) {
-let difference = number1 - number2;
-return difference; 
+const subtract = function(number1, number2) { 
+let diifference = number1 - number2;  
+return diifference;
 }
 document.getElementById("subtractNumbers").addEventListener("click", function() {
 let minuend = document.getElementById("minuend").value;
@@ -34,32 +34,43 @@ let difference = subtract(minuend, subtrahend);
 document.getElementById("difference").value = difference;
 });
 
-
 // Step 7: Using arrow functions, repeat Steps 1-5 with new functions named multiply and mulitplyNumbers and HTML form controls with IDs of factor1, factor2, product and multiplyNumbers
+let multiply = (number1, number2) => number1 * number2;
+document.getElementById("multiplyNumbers").addEventListener("click", function() {
+let factor1 = document.getElementById("factor1").value;
+let factor2 = document.getElementById("factor2").value;
+let product = multiply(factor1, factor2);
+document.getElementById("product").value = product;
+});
 
 // Step 8: Using any of the three function declaration types, repeat Steps 1-5 with new functions named divide and divideNumbers and HTML form controls with IDs of dividend, divisor, quotient and divideNumbers
-
+let divide = (number1, number2) => number1 / number2;
+document.getElementById("divideNumbers").addEventListener("click", function() {
+let dividend = document.getElementById("dividend").value;
+let divisor = document.getElementById("divisor").value;
+let quotient = divide(dividend, divisor);
+document.getElementById("quotient").value = quotient;
+});
 // Step 9: Test all of the mathematical functionality of the task3.html page.
 
 
 
 
-// const element = document.querySelector("addNumbers");
-
-// element.addEventListener("click", () => {
-//     console.log("addNumbers");
-// });
-
-
 /* BUILT-IN METHODS */
 
 // Step 1: Declare and instantiate a variable of type Date to hold the current date
+let currentDate = new Date();
 
 // Step 2: Declare a variable to hold the current year
+let currentYear = today.getFullYear();
 
 // Step 3: Using the variable declared in Step 1, call the built-in getFullYear() method/function and assign it to the variable declared in Step 2
+currentDate.getFullYear() = currentYear;
 
 // Step 4: Assign the current year variable to an HTML form element with an ID of year
+document.getElementById("year").innerHTML = currentYear;
+
+
 
 
 /* ARRAY METHODS */
