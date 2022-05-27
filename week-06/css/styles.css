@@ -69,6 +69,26 @@ h1, h2 {
   margin-bottom: 5px;
   font-size: 18px;
 }
+.my-button{
+text-align: center;
+padding-top: 10px;
+padding-bottom: 10px;
+padding-left: 20px;
+padding-right: 20px;
+}
+button{
+  background-color: rgb(31, 28, 23);
+  border: none;
+  color: rgb(244, 243, 243);
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 10px;
+}
 
 /* FOOTER */
 
