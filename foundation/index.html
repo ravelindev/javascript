@@ -10,6 +10,42 @@
     <script>
       // My JS goes here
       console.log("Hello World!");
+      console.log(23 + 97)
+      console.log((4 + 6 + 9) / 77)
+
+      // Funtion
+      // Function add7
+      function add7(num){
+        return num + 7
+      }
+      console.log(add7(3));
+      // Function Multiplication
+      function multiply(a, b){
+        return a * b;
+      }
+      console.log(multiply(2, 4));
+
+      // Function capitalize
+      function capitalize(str){
+        // convert first letter to uppercase
+        const capitalized = str.charAt(0).toUpperCase() + str.slice(1);
+        return capitalized;
+      }
+      var inputString = "rudy ravelin";
+      var capitalizedString = capitalize(inputString);
+
+      console.log(capitalizedString);
+
+      // Function Last Letter
+      function lastLetter(str){
+        return str.charAt(str.length -1);
+      }
+
+      var inputString = "Rudy";
+      var last = lastLetter(inputString);
+
+      console.log(last);
+
     </script>
   </body>
 </html>
